@@ -1,6 +1,7 @@
 package pages;
 
 import elements.LoginElements;
+import helpers.Randomizers;
 import utils.UserData;
 
 public class LoginPage extends LoginElements {
@@ -23,5 +24,19 @@ public class LoginPage extends LoginElements {
     public LoginPage clickResetPassword() {
         getResetPassword().click();
         return this;
+    }
+
+    public LoginPage inputInvalidUserName() {
+        Randomizers.randomName(getUserNameInput());
+        return this;
+    }
+
+    public LoginPage inputInvalidUserPassword() {
+        Randomizers.randomPassword(getUserPasswordInput());
+        return this;
+    }
+
+    public boolean isErrorMessageThereWasAProblemVisible() {
+        return getErrorMessageThereWasAProblem().isDisplayed();
     }
 }

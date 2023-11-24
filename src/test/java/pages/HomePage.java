@@ -1,8 +1,8 @@
 package pages;
 
-import fragments.HeaderFragment;
+import fragments.HeaderComponent;
 
-public class HomePage extends HeaderFragment {
+public class HomePage extends HeaderComponent {
 
     public HomePage clickLogo() {
         getHeaderLogo().click();

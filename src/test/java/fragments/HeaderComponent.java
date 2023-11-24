@@ -3,7 +3,7 @@ package fragments;
 import com.codeborne.selenide.SelenideElement;
 import common.BasePage;
 
-public class HeaderFragment extends BasePage {
+public class HeaderComponent extends BasePage {
 
     private final static String HEADER_LOG0 = "//a//img[contains(@alt, 'The Movie Database')]";
     private final static String MOVIE_MENU = "//a[text()='Movies']";
