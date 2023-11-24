@@ -17,6 +17,19 @@ public class HeaderComponent extends BasePage {
     private final static String HEADER_SEARCH = "//span[@class='glyphicons_v2 search blue']";
     private final static String LOGIN_HEADER_BUTTON = "//ul//a[text()='Login']";
     private final static String JOIN_TMDB_HEADER_BUTTON = "//a[text()='Join TMDB']";
+    private final static String MOVIE_MENU_POPULAR = "//a[@href='/movie'and text()='Popular']";
+    private final static String MOVIE_MENU_NOW_PLAYING = "//a[text()='Now Playing']";
+    private final static String MOVIE_MENU_UPCOMING = "//a[text()='Upcoming']";
+    private final static String MOVIE_MENU_TOP_RATED = "//a[@href='/movie/top-rated' and text()='Top Rated']";
+    private final static String TV_SHOW_MENU_POPULAR = "//a[@href='/tv' and text()='Popular']";
+    private final static String TV_SHOW_MENU_AIRING_TODAY = "//a[text()='Airing Today']";
+    private final static String TV_SHOW_MENU_ON_TV = "//a[text()='On TV']";
+    private final static String TV_SHOW_MENU_TOP_RATED = "//a[@href='/movie/top-rated' and text()='Top Rated']";
+    private final static String PEOPLE_MENU_POPULAR_PEOPLE = "//a[text()='Popular People']";
+    private final static String MORE_MENU_DISCUSSIONS = "";
+    private final static String MORE_MENU_LEADER_BOARD = "";
+    private final static String MORE_MENU_SUPPORT = "";
+    private final static String MORE_MENU_API = "";
 
     public SelenideElement getHeaderLogo() {
         return getVisibleOfElement(HEADER_LOG0);
@@ -64,5 +77,57 @@ public class HeaderComponent extends BasePage {
 
     public SelenideElement getJoinTMDBHeader() {
         return getVisibleOfElement(JOIN_TMDB_HEADER_BUTTON);
+    }
+
+    public SelenideElement getMovieMenuPopular() {
+        return getVisibleOfElement(MOVIE_MENU_POPULAR);
+    }
+
+    public SelenideElement getMovieMenuNowPlaying() {
+        return getVisibleOfElement(MOVIE_MENU_NOW_PLAYING);
+    }
+
+    public SelenideElement getMovieMenuUpcoming() {
+        return getVisibleOfElement(MOVIE_MENU_UPCOMING);
+    }
+
+    public SelenideElement getMovieMenuTopRated() {
+        return getVisibleOfElement(MOVIE_MENU_TOP_RATED);
+    }
+
+    public SelenideElement getTVShowsMenuAiringToday() {
+        return getVisibleOfElement(TV_SHOW_MENU_AIRING_TODAY);
+    }
+
+    public SelenideElement getTVShowsMenuPopular() {
+        return getVisibleOfElement(TV_SHOW_MENU_POPULAR);
+    }
+
+    public SelenideElement getTVShowsMenuOnTV() {
+        return getVisibleOfElement(TV_SHOW_MENU_ON_TV);
+    }
+
+    public SelenideElement getTVShowsMenuTopRated() {
+        return getVisibleOfElement(TV_SHOW_MENU_TOP_RATED);
+    }
+
+    public SelenideElement getPeopleMenuPopularPeople() {
+        return getVisibleOfElement(PEOPLE_MENU_POPULAR_PEOPLE);
+    }
+
+    public SelenideElement getMoreMenuDiscussion() {
+        return getVisibleOfElement(MORE_MENU_DISCUSSIONS);
+    }
+
+    public SelenideElement getMoreMenuLeaderBoard() {
+        return getVisibleOfElement(MORE_MENU_LEADER_BOARD);
+    }
+
+    public SelenideElement getMoreMenuSupport() {
+        return getVisibleOfElement(MORE_MENU_SUPPORT);
+    }
+
+    public SelenideElement getMoreMenuAPI() {
+        return getVisibleOfElement(MORE_MENU_API);
     }
 }

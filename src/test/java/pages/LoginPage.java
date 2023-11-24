@@ -2,17 +2,16 @@ package pages;
 
 import elements.LoginElements;
 import helpers.Randomizers;
-import utils.UserData;
 
 public class LoginPage extends LoginElements {
 
-    public LoginPage inputUserName() {
-        getUserNameInput().sendKeys(UserData.USER_NAME);
+    public LoginPage inputUserName(String name) {
+        getUserNameInput().sendKeys(name);
         return this;
     }
 
-    public LoginPage inputUserPassword() {
-        getUserPasswordInput().sendKeys(UserData.USER_PASSWORD);
+    public LoginPage inputUserPassword(String password) {
+        getUserPasswordInput().sendKeys(password);
         return this;
     }
 

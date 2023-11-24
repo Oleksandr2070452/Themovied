@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c724a48f-6455-455c-b959-1d42e7af952f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/HeaderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
     </list>
@@ -49,7 +45,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.userInvalidLogin">
+  <component name="RunManager" selected="TestNG.LoginTest.userWithoutUserName">
     <configuration name="LoginTest.userInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
@@ -74,8 +70,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.userWithoutUserName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Themoviedb" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="userWithoutUserName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.userWithoutUserName" />
         <item itemvalue="TestNG.LoginTest.userInvalidLogin" />
         <item itemvalue="TestNG.LoginTest.userValidLogin" />
       </list>

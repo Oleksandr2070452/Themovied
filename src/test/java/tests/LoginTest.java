@@ -2,9 +2,15 @@ package tests;
 
 import elements.LoginElements;
 import jdk.jfr.Description;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
+import static utils.UserData.USER_NAME;
+import static utils.UserData.USER_PASSWORD;
 
 public class LoginTest extends TestInit {
 
@@ -20,8 +26,8 @@ public class LoginTest extends TestInit {
                 .clickLoginHeader();
 
         loginPage
-                .inputUserName()
-                .inputUserPassword()
+                .inputUserName(USER_NAME)
+                .inputUserPassword(USER_PASSWORD)
                 .clickLoginButton();
 
         assertTrue(getUrl("sanek2070452"));
@@ -45,5 +51,6 @@ public class LoginTest extends TestInit {
                 .clickLoginButton();
 
         assertTrue(loginPage.isErrorMessageThereWasAProblemVisible());
+
     }
 }
