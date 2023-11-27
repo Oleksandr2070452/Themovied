@@ -10,6 +10,7 @@ public class LoginElements extends BasePage {
     private final static String LOGIN_BUTTON = "//input[@id='login_button']";
     private final static String RESET_PASSWORD = "//input[@id='login_button']";
     private final static String USER_NAME_TITLE = "//div[@class='content_wrapper flex']//a[text()='%s']";
+    private final static String ERROR_MESSAGE_THERE_WAS_A_PROBLEM = "//h2[@class='background_color red']";
 
 
     public SelenideElement getUserNameInput() {
@@ -29,6 +30,10 @@ public class LoginElements extends BasePage {
     }
 
     public boolean getUserNameTitle(String username) {
-        return getVisibleOfElement(String.format(USER_NAME_TITLE,username)).getText().contains(username);
+        return getVisibleOfElement(String.format(USER_NAME_TITLE, username)).getText().contains(username);
     }
+    public SelenideElement getErrorMessageThereWasAProblem(){
+        return getVisibleOfElement(ERROR_MESSAGE_THERE_WAS_A_PROBLEM);
+    }
+
 }
