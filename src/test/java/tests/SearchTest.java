@@ -30,7 +30,7 @@ public class SearchTest extends TestInit {
                 .inputSearchField(MOVIE_NAME)
                 .clickSearchButton();
 
-        assertTrue(searchPage.isListOfElementsByTextNameVisible(MOVIE_NAME));
+        assertTrue(searchPage.isListOfMovieElementsByTextNameVisible(MOVIE_NAME));
 
     }
 }
