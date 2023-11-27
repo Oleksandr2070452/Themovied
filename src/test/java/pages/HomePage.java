@@ -1,16 +1,16 @@
 package pages;
 
-import fragments.HeaderComponent;
+import elements.HomeElements;
 
-public class HomePage extends HeaderComponent {
+public class HomePage extends HomeElements {
 
-    public HomePage clickLogo() {
-        getHeaderLogo().click();
+    public HomePage inputSearchField(String text) {
+        getSearchInput().sendKeys(text);
         return this;
     }
 
-    public HomePage clickLoginHeader() {
-        getLoginHeader().click();
+    public HomePage clickSearchButton() {
+        getSearchButton().click();
         return this;
     }
 }

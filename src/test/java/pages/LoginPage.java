@@ -1,7 +1,11 @@
 package pages;
 
 import elements.LoginElements;
+import fragments.HeaderComponent;
 import helpers.Randomizers;
+
+import static utils.UserData.USER_NAME;
+import static utils.UserData.USER_PASSWORD;
 
 public class LoginPage extends LoginElements {
 
@@ -37,5 +41,18 @@ public class LoginPage extends LoginElements {
 
     public boolean isErrorMessageThereWasAProblemVisible() {
         return getErrorMessageThereWasAProblem().isDisplayed();
+    }
+
+    public LoginPage themoviedbLogin() {
+        HomePage homePage = new HomePage();
+        HeaderComponent headerComponent = new HeaderComponent();
+
+        headerComponent
+                .clickLoginHeader();
+
+        inputUserName(USER_NAME)
+                .inputUserPassword(USER_PASSWORD)
+                .clickLoginButton();
+        return this;
     }
 }

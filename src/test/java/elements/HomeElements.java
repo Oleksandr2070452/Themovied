@@ -1,5 +1,6 @@
 package elements;
 
+import com.codeborne.selenide.SelenideElement;
 import common.BasePage;
 
 public class HomeElements extends BasePage {
@@ -8,4 +9,12 @@ public class HomeElements extends BasePage {
     private final static String SEARCH_BUTTON = "//input[@value='Search']";
     private final static String TOGGLE_TODAY = "//a[@data-group='today']";
     private final static String TOGGLE_THIS_WEEK = "//a[@data-group='this week']";
+
+    public SelenideElement getSearchInput() {
+        return getVisibleOfElement(SEARCH_INPUT);
+    }
+
+    public SelenideElement getSearchButton() {
+        return getVisibleOfElement(SEARCH_BUTTON);
+    }
 }

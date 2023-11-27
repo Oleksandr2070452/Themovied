@@ -130,4 +130,14 @@ public class HeaderComponent extends BasePage {
     public SelenideElement getMoreMenuAPI() {
         return getVisibleOfElement(MORE_MENU_API);
     }
+
+    public HeaderComponent clickLogo() {
+        getHeaderLogo().click();
+        return this;
+    }
+
+    public HeaderComponent clickLoginHeader() {
+        getLoginHeader().click();
+        return this;
+    }
 }

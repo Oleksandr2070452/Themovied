@@ -1,14 +1,11 @@
 package tests;
 
 import elements.LoginElements;
+import fragments.HeaderComponent;
 import jdk.jfr.Description;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import pages.LoginPage;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
 import static utils.UserData.USER_NAME;
 import static utils.UserData.USER_PASSWORD;
 
@@ -18,11 +15,12 @@ public class LoginTest extends TestInit {
     @Description("Positive: user login with valid credentials")
     public void userValidLogin() {
 
-        HomePage homePage = new HomePage();
+
         LoginPage loginPage = new LoginPage();
         LoginElements loginElements = new LoginElements();
+        HeaderComponent headerComponent = new HeaderComponent();
 
-        homePage
+        headerComponent
                 .clickLoginHeader();
 
         loginPage
@@ -39,10 +37,10 @@ public class LoginTest extends TestInit {
     @Description("Negative: user login with invalid credentials")
     public void userInvalidLogin() {
 
-        HomePage homePage = new HomePage();
         LoginPage loginPage = new LoginPage();
+        HeaderComponent headerComponent = new HeaderComponent();
 
-        homePage
+        headerComponent
                 .clickLoginHeader();
 
         loginPage
