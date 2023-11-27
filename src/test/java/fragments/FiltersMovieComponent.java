@@ -3,7 +3,7 @@ package fragments;
 import com.codeborne.selenide.SelenideElement;
 import common.BasePage;
 
-public class SearchResultComponent extends BasePage {
+public class FiltersMovieComponent extends BasePage {
 
     private final static String MOVIE_FILTER = "//a[@id='movie']";
     private final static String TV_SHOWS_FILTER = "//a[@id='tv']";
@@ -39,5 +39,15 @@ public class SearchResultComponent extends BasePage {
 
     public SelenideElement getNetworksFilter() {
         return getVisibleOfElement(NETWORKS_FILTER);
+    }
+
+    public FiltersMovieComponent clickOnTVShowsFilter() {
+        getTVShowsFilter().click();
+        return this;
+    }
+
+    public FiltersMovieComponent clickKeywordsFilter() {
+        getKeywordFilter().click();
+        return this;
     }
 }
