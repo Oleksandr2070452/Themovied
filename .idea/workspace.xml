@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c724a48f-6455-455c-b959-1d42e7af952f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/SearchResultComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/FiltersMovieComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +34,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Search&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Home",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Olexsandr\IdeaProjects\Themoviedb\src\test" />
@@ -51,12 +52,23 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SearchTest.userFilteringMovies">
-    <configuration name="LoginTest.userInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomeTest.userCannotAddList">
+    <configuration name="HomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="userInvalidLogin" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTest.userCannotAddList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Themoviedb" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
+      <option name="METHOD_NAME" value="userCannotAddList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -64,11 +76,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.userValidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.userCreateList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="userValidLogin" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
+      <option name="METHOD_NAME" value="userCreateList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -76,11 +88,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.userWithoutUserName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.userDeleteList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="userWithoutUserName" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
+      <option name="METHOD_NAME" value="userDeleteList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -88,23 +100,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.userFilteringMovies" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.xhe" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
-      <option name="METHOD_NAME" value="userFilteringMovies" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest.userSearchAMovie" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Themoviedb" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchTest" />
-      <option name="METHOD_NAME" value="userSearchAMovie" />
+      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
+      <option name="METHOD_NAME" value="xhe" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SearchTest.userFilteringMovies" />
-        <item itemvalue="TestNG.SearchTest.userSearchAMovie" />
-        <item itemvalue="TestNG.LoginTest.userWithoutUserName" />
-        <item itemvalue="TestNG.LoginTest.userInvalidLogin" />
-        <item itemvalue="TestNG.LoginTest.userValidLogin" />
+        <item itemvalue="TestNG.HomeTest.userCannotAddList" />
+        <item itemvalue="TestNG.HomeTest.userDeleteList" />
+        <item itemvalue="TestNG.HomeTest.userCreateList" />
+        <item itemvalue="TestNG.HomeTest" />
+        <item itemvalue="TestNG.HomeTest.xhe" />
       </list>
     </recent_temporary>
   </component>
