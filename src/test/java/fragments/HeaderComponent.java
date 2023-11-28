@@ -30,6 +30,7 @@ public class HeaderComponent extends BasePage {
     private final static String MORE_MENU_LEADER_BOARD = "";
     private final static String MORE_MENU_SUPPORT = "";
     private final static String MORE_MENU_API = "";
+    private final static String LISTS_BUTTON = "//div[@data-role='popup']//p/a[text()='Lists']";
 
     public SelenideElement getHeaderLogo() {
         return getVisibleOfElement(HEADER_LOG0);
@@ -131,6 +132,10 @@ public class HeaderComponent extends BasePage {
         return getVisibleOfElement(MORE_MENU_API);
     }
 
+    public SelenideElement getListsButton() {
+        return getVisibleOfElement(LISTS_BUTTON);
+    }
+
     public HeaderComponent clickLogo() {
         getHeaderLogo().click();
         return this;
@@ -138,6 +143,16 @@ public class HeaderComponent extends BasePage {
 
     public HeaderComponent clickLoginHeader() {
         getLoginHeader().click();
+        return this;
+    }
+
+    public HeaderComponent clickAccountProfile() {
+        getProfileIcon().click();
+        return this;
+    }
+
+    public HeaderComponent clickListsButton() {
+        getListsButton().click();
         return this;
     }
 }

@@ -13,4 +13,14 @@ public class HomePage extends HomeElements {
         getSearchButton().click();
         return this;
     }
+
+    public HomePage clickFirstMovieItemTrending() {
+        getFirstMovieItem().click();
+        return this;
+    }
+
+    public HomePage clickAcceptAllCookies() {
+        getAcceptAllCookiesButton().click();
+        return this;
+    }
 }
