@@ -44,6 +44,7 @@ public class HomeTest extends TestInit {
         AddEditItemsPage addEditItemsPage = new AddEditItemsPage();
         EditListPage editListPage = new EditListPage();
         ListsPage listsPage = new ListsPage();
+        DeletePage deletePage = new DeletePage();
 
 
         loginPage
@@ -82,6 +83,16 @@ public class HomeTest extends TestInit {
 
         assertTrue(listsPage.getListItem().isDisplayed());
         assertTrue(listsPage.getListItem().getText().contains(LIST_NAME));
+
+        listsPage
+                .clickEditButton();
+
+        editListPage
+                .clickDeleteList();
+
+        deletePage
+                .clickConfirmDelete()
+                .clickYesButton();
     }
 
     @Test
