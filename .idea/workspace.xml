@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c724a48f-6455-455c-b959-1d42e7af952f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/CreateListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CreateListElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/ListsElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/ListsElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/MovieElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/MovieElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MoviePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MoviePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Home",
+    "last_opened_file_path": "C:/Users/Olexsandr/IdeaProjects/email-automation-project",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
@@ -52,23 +60,22 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomeTest.userCannotAddList">
-    <configuration name="HomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomeTest.userAddMovieToWishlist">
+    <configuration name="C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.userCannotAddList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.userAddMovieToWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userCannotAddList" />
+      <option name="METHOD_NAME" value="userAddMovieToWishlist" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -76,11 +83,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.userCreateList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.userAddPhotoMovieList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userCreateList" />
+      <option name="METHOD_NAME" value="userAddPhotoMovieList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,11 +107,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.xhe" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.userValidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="xhe" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="userValidLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomeTest.userCannotAddList" />
+        <item itemvalue="TestNG.HomeTest.userAddMovieToWishlist" />
+        <item itemvalue="TestNG.C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" />
         <item itemvalue="TestNG.HomeTest.userDeleteList" />
-        <item itemvalue="TestNG.HomeTest.userCreateList" />
-        <item itemvalue="TestNG.HomeTest" />
-        <item itemvalue="TestNG.HomeTest.xhe" />
+        <item itemvalue="TestNG.HomeTest.userAddPhotoMovieList" />
+        <item itemvalue="TestNG.LoginTest.userValidLogin" />
       </list>
     </recent_temporary>
   </component>

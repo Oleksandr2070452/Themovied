@@ -8,6 +8,7 @@ public class MovieElements extends BasePage {
     private final static String ADD_TO_LIST_BUTTON = "//li[@class='tooltip use_tooltip list tooltip_hover']";
     private final static String CREATE_NEW_LIST_BUTTON = "//span[@class='glyphicons_v2 plus invert svg']";
     private final static String WARNING_LOGIN_MESSAGE = "//div[text()='Login to create and edit custom lists']";
+    private final static String ADD_TO_WISHLIST_BUTTON = "//a[@id='watchlist']";
 
     public SelenideElement getAddToListButton() {
         return getVisibleOfElement(ADD_TO_LIST_BUTTON);
@@ -19,5 +20,8 @@ public class MovieElements extends BasePage {
 
     public SelenideElement getWarningLoginMessage() {
         return getVisibleOfElement(WARNING_LOGIN_MESSAGE);
+    }
+    public SelenideElement getAddToWishlistButton(){
+        return getVisibleOfElement(ADD_TO_WISHLIST_BUTTON);
     }
 }
