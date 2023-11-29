@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -19,7 +20,7 @@ public class TestInit extends Assert {
         Configuration.browser = "chrome";
         Configuration.headless = false;
         open(BASE_URL);
-        Configuration.browserSize = "1920x1080";
+        WebDriverRunner.getWebDriver().manage().window().maximize();
     }
 
     @AfterMethod
@@ -31,3 +32,4 @@ public class TestInit extends Assert {
         return WebDriverRunner.getWebDriver().getCurrentUrl().contains(endpoint);
     }
 }
+

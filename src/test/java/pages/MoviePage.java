@@ -13,4 +13,9 @@ public class MoviePage extends MovieElements {
         getCreateNewListButton().click();
         return this;
     }
+
+    public MoviePage clickAddToWishlistButton() {
+        getAddToWishlistButton().click();
+        return this;
+    }
 }

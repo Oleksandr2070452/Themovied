@@ -26,7 +26,8 @@ public class CreateListElements extends BasePage {
     public SelenideElement getContinueButton() {
         return getVisibleOfElement(CONTINUE_BUTTON);
     }
-    public SelenideElement getNoPublicSelector(){
+
+    public SelenideElement getNoPublicSelector() {
         return getVisibleOfElement(NO_PUBLIC_SELECTOR);
     }
 }

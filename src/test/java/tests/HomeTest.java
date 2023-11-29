@@ -5,13 +5,14 @@ import jdk.jfr.Description;
 import org.testng.annotations.Test;
 import pages.*;
 
+import static com.codeborne.selenide.Selenide.refresh;
+
 public class HomeTest extends TestInit {
 
     private final static String LIST_NAME = "Test";
     private final static String LIST_DESCRIPTION = "Only for testing";
-    private final static String MOVIE_NAME = "Doctor Who";
+    private final static String MOVIE_NAME = "Freelance";
     private final static String MOVIE_DESCRIPTION = "Test movie description";
-    private final static String TITLE = "You haven't created any lists.";
     private final static String WARNING_LOGIN_MESSAGE = "Login to create and edit custom lists";
 
     @Test
@@ -156,7 +157,47 @@ public class HomeTest extends TestInit {
                 .clickConfirmDelete()
                 .clickYesButton();
 
-        assertTrue(listsPage.getTitleYouHaventCreatedAnyLists().getText().contains(TITLE));
+        assertTrue(listsPage.getTitleYouHaveNotCreatedAnyLists().getText().contains("You haven't created any lists."));
+
+    }
+
+    @Test
+    @Description("Positive: user add movie to wishlist")
+    public void userAddMovieToWishlist() {
+
+        HomePage homePage = new HomePage();
+        LoginPage loginPage = new LoginPage();
+        HeaderComponent headerComponent = new HeaderComponent();
+        MoviePage moviePage = new MoviePage();
+        WatchlistPage watchlistPage = new WatchlistPage();
+
+        loginPage
+                .themoviedbLogin();
+
+        headerComponent
+                .clickLogo();
+
+        homePage
+                .clickAcceptAllCookies()
+                .clickFirstMovieItemTrending();
+
+        moviePage
+                .clickAddToWishlistButton();
+
+        headerComponent
+                .clickAccountProfile()
+                .clickWatchlistButton();
+
+        assertTrue(getUrl("watchlist"));
+        assertTrue(watchlistPage.getMovieHeader().getText().contains(MOVIE_NAME));
+
+        watchlistPage
+                .clickRemoveButton();
+
+        refresh();
+
+        assertTrue(watchlistPage.getYouHaveCreatedAnyWatchlistTitle()
+                .getText().contains("You haven't added any movies to your watchlist."));
 
     }
 }
