@@ -13,26 +13,27 @@ public class LoginElements extends BasePage {
     private final static String ERROR_MESSAGE_THERE_WAS_A_PROBLEM = "//h2[@class='background_color red']";
 
 
-    public SelenideElement getUserNameInput() {
+    protected SelenideElement getUserNameInput() {
         return getVisibleOfElement(USERNAME_INPUT);
     }
 
-    public SelenideElement getUserPasswordInput() {
+    protected SelenideElement getUserPasswordInput() {
         return getVisibleOfElement(USER_PASSWORD_INPUT);
     }
 
-    public SelenideElement getLoginButton() {
+    protected SelenideElement getLoginButton() {
         return getClickableOfElement(LOGIN_BUTTON);
     }
 
-    public SelenideElement getResetPassword() {
+    protected SelenideElement getResetPassword() {
         return getClickableOfElement(RESET_PASSWORD);
     }
 
     public boolean getUserNameTitle(String username) {
         return getVisibleOfElement(String.format(USER_NAME_TITLE, username)).getText().contains(username);
     }
-    public SelenideElement getErrorMessageThereWasAProblem(){
+
+    public SelenideElement getErrorMessageThereWasAProblem() {
         return getVisibleOfElement(ERROR_MESSAGE_THERE_WAS_A_PROBLEM);
     }
 

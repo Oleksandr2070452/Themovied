@@ -30,6 +30,9 @@ public class HeaderComponent extends BasePage {
     private final static String MORE_MENU_LEADER_BOARD = "";
     private final static String MORE_MENU_SUPPORT = "";
     private final static String MORE_MENU_API = "";
+    private final static String LISTS_BUTTON = "//div[@data-role='popup']//p/a[text()='Lists']";
+    private final static String WATCHLIST_BUTTON = "//div[@data-role='popup']//p//a[text()='Watchlist']";
+    private final static String EDIT_PROFILE_BUTTON = "//div[@data-role='popup']//a[text()='Edit Profile']";
 
     public SelenideElement getHeaderLogo() {
         return getVisibleOfElement(HEADER_LOG0);
@@ -129,5 +132,46 @@ public class HeaderComponent extends BasePage {
 
     public SelenideElement getMoreMenuAPI() {
         return getVisibleOfElement(MORE_MENU_API);
+    }
+
+    public SelenideElement getListsButton() {
+        return getVisibleOfElement(LISTS_BUTTON);
+    }
+
+    public SelenideElement getWatchlistButton() {
+        return getVisibleOfElement(WATCHLIST_BUTTON);
+    }
+
+    public HeaderComponent clickLogo() {
+        getHeaderLogo().click();
+        return this;
+    }
+
+    public HeaderComponent clickLoginHeader() {
+        getLoginHeader().click();
+        return this;
+    }
+
+    public HeaderComponent clickAccountProfile() {
+        getProfileIcon().click();
+        return this;
+    }
+
+    public HeaderComponent clickListsButton() {
+        getListsButton().click();
+        return this;
+    }
+
+    public HeaderComponent clickWatchlistButton() {
+        getWatchlistButton().click();
+        return this;
+    }
+    protected SelenideElement getEditProfileButton() {
+        return getVisibleOfElement(EDIT_PROFILE_BUTTON);
+    }
+
+    public HeaderComponent clickEditProfileButton() {
+        getEditProfileButton().click();
+        return this;
     }
 }

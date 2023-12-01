@@ -19,7 +19,7 @@ public class TestInit extends Assert {
         Configuration.browser = "chrome";
         Configuration.headless = false;
         open(BASE_URL);
-        Configuration.browserSize = "1920x1080";
+        WebDriverRunner.getWebDriver().manage().window().maximize();
     }
 
     @AfterMethod
@@ -31,3 +31,4 @@ public class TestInit extends Assert {
         return WebDriverRunner.getWebDriver().getCurrentUrl().contains(endpoint);
     }
 }
+
