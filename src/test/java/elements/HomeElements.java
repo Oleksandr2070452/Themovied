@@ -11,20 +11,25 @@ public class HomeElements extends BasePage {
     private final static String TOGGLE_THIS_WEEK = "//a[@data-group='this week']";
     private final static String FIRST_MOVIE_ITEM = "//div[@id='trending_scroller']//div[@class='card style_1'][1]";
     private final static String ACCEPT_ALL_COOKIES_BUTTON = "//button[@id='onetrust-accept-btn-handler']";
+    private final static String LOGGED_OUT_HEADER = "//h2[text()='Logged Out!']";
 
-    public SelenideElement getSearchInput() {
+    protected SelenideElement getSearchInput() {
         return getVisibleOfElement(SEARCH_INPUT);
     }
 
-    public SelenideElement getSearchButton() {
+    protected SelenideElement getSearchButton() {
         return getVisibleOfElement(SEARCH_BUTTON);
     }
 
-    public SelenideElement getFirstMovieItem() {
+    protected SelenideElement getFirstMovieItem() {
         return getVisibleOfElement(FIRST_MOVIE_ITEM);
     }
 
-    public SelenideElement getAcceptAllCookiesButton() {
+    protected SelenideElement getAcceptAllCookiesButton() {
         return getVisibleOfElement(ACCEPT_ALL_COOKIES_BUTTON);
+    }
+
+    public SelenideElement getLoggedOutHeader() {
+        return getVisibleOfElement(LOGGED_OUT_HEADER);
     }
 }

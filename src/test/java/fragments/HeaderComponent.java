@@ -32,6 +32,7 @@ public class HeaderComponent extends BasePage {
     private final static String MORE_MENU_API = "";
     private final static String LISTS_BUTTON = "//div[@data-role='popup']//p/a[text()='Lists']";
     private final static String WATCHLIST_BUTTON = "//div[@data-role='popup']//p//a[text()='Watchlist']";
+    private final static String EDIT_PROFILE_BUTTON = "//div[@data-role='popup']//a[text()='Edit Profile']";
 
     public SelenideElement getHeaderLogo() {
         return getVisibleOfElement(HEADER_LOG0);
@@ -163,6 +164,14 @@ public class HeaderComponent extends BasePage {
 
     public HeaderComponent clickWatchlistButton() {
         getWatchlistButton().click();
+        return this;
+    }
+    protected SelenideElement getEditProfileButton() {
+        return getVisibleOfElement(EDIT_PROFILE_BUTTON);
+    }
+
+    public HeaderComponent clickEditProfileButton() {
+        getEditProfileButton().click();
         return this;
     }
 }

@@ -10,7 +10,7 @@ public class WatchlistElements extends BasePage {
     private final static String REMOVE_BUTTON = "//span[@class='remove wrapper']";
     private final static String YOU_HAVE_NOT_CREATED_ANY_WATCHLIST_TITLE = "//div[@class='items_wrapper']/p";
 
-    public SelenideElement getTVButton() {
+    protected SelenideElement getTVButton() {
         return getVisibleOfElement(TV_BUTTON);
     }
 
@@ -18,7 +18,7 @@ public class WatchlistElements extends BasePage {
         return getVisibleOfElement(MOVIE_HEADER);
     }
 
-    public SelenideElement getRemoveButton() {
+    protected SelenideElement getRemoveButton() {
         return getVisibleOfElement(REMOVE_BUTTON);
     }
 

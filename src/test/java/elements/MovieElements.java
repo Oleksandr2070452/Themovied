@@ -10,18 +10,19 @@ public class MovieElements extends BasePage {
     private final static String WARNING_LOGIN_MESSAGE = "//div[text()='Login to create and edit custom lists']";
     private final static String ADD_TO_WISHLIST_BUTTON = "//a[@id='watchlist']";
 
-    public SelenideElement getAddToListButton() {
+    protected SelenideElement getAddToListButton() {
         return getVisibleOfElement(ADD_TO_LIST_BUTTON);
     }
 
-    public SelenideElement getCreateNewListButton() {
+    protected SelenideElement getCreateNewListButton() {
         return getVisibleOfElement(CREATE_NEW_LIST_BUTTON);
     }
 
     public SelenideElement getWarningLoginMessage() {
         return getVisibleOfElement(WARNING_LOGIN_MESSAGE);
     }
-    public SelenideElement getAddToWishlistButton(){
+
+    protected SelenideElement getAddToWishlistButton() {
         return getVisibleOfElement(ADD_TO_WISHLIST_BUTTON);
     }
 }

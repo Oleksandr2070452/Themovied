@@ -13,7 +13,7 @@ public class ListsElements extends BasePage {
         return getVisibleOfElement(LIST_ITEM);
     }
 
-    public SelenideElement getEditButton() {
+    protected SelenideElement getEditButton() {
         return getVisibleOfElement(EDIT_BUTTON);
     }
 
