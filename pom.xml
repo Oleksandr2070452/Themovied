@@ -15,6 +15,7 @@
         <restassuredVersion>5.3.2</restassuredVersion>
         <testngVersion>7.8.0</testngVersion>
         <selenideVersion>7.0.2</selenideVersion>
+        <javaFakerVersion>1.0.2</javaFakerVersion>
     </properties>
 
     <dependencies>
@@ -47,7 +48,7 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <version>${javaFakerVersion}</version>
             <scope>test</scope>
         </dependency>
 
