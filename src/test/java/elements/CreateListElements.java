@@ -11,23 +11,23 @@ public class CreateListElements extends BasePage {
     private final static String CONTINUE_BUTTON = "//input[@id='step_1_submit']";
     private final static String NO_PUBLIC_SELECTOR = "//li[@aria-selected='false' and text()='No']";
 
-    public SelenideElement getNameInput() {
+    protected SelenideElement getNameInput() {
         return getVisibleOfElement(NAME_INPUT);
     }
 
-    public SelenideElement getDescriptionTextArea() {
+    protected SelenideElement getDescriptionTextArea() {
         return getVisibleOfElement(DESCRIPTION_TEXTAREA);
     }
 
-    public SelenideElement getPublicListDropdown() {
+    protected SelenideElement getPublicListDropdown() {
         return getVisibleOfElement(PUBLIC_LIST_DROPDOWN);
     }
 
-    public SelenideElement getContinueButton() {
+    protected SelenideElement getContinueButton() {
         return getVisibleOfElement(CONTINUE_BUTTON);
     }
 
-    public SelenideElement getNoPublicSelector() {
+    protected SelenideElement getNoPublicSelector() {
         return getVisibleOfElement(NO_PUBLIC_SELECTOR);
     }
 }

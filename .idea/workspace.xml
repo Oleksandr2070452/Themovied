@@ -4,9 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c724a48f-6455-455c-b959-1d42e7af952f" name="Changes" comment="">
+    <list default="true" id="a1d64127-40a0-48a0-adf9-be802a904737" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/AddEditItemsElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/CreateListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/DeleteElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/EditListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/ListsElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/MovieElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/WatchlistElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AddEditItemsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CreateListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DeletePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/EditListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ListsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MoviePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/WatchlistPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SignUpElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SignUpElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/SearchResultComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/FiltersMovieComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,53 +49,18 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2YXDihSzg7dW2BWEisUyNCh8lVP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "APIModuless",
-    "last_opened_file_path": "C:/Users/Olexsandr/IdeaProjects/email-automation-project",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "git-widget-placeholder": "Merging Login"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Olexsandr\IdeaProjects\Themoviedb\src\test" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="tests" />
-    </key>
-  </component>
-  <component name="RunManager" selected="TestNG.HomeTest.userCannotAddList">
-    <configuration name="C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Themoviedb" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeTest.userAddMovieToWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTest.userResetPassword">
+    <configuration name="LoginTest.userEditHisProfile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userAddMovieToWishlist" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="userEditHisProfile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -75,35 +68,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.userCannotAddList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.userResetPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userCannotAddList" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeTest.userCreateList" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Themoviedb" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userCreateList" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeTest.userDeleteList" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Themoviedb" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="userDeleteList" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="userResetPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,13 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomeTest.userCannotAddList" />
-        <item itemvalue="TestNG.HomeTest.userCreateList" />
-        <item itemvalue="TestNG.C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" />
-        <item itemvalue="TestNG.HomeTest.userAddMovieToWishlist" />
-        <item itemvalue="TestNG.HomeTest.userDeleteList" />
+        <item itemvalue="TestNG.LoginTest.userResetPassword" />
+        <item itemvalue="TestNG.LoginTest.userEditHisProfile" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 </project>

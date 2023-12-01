@@ -4,6 +4,8 @@ import elements.LoginElements;
 import fragments.HeaderComponent;
 import jdk.jfr.Description;
 import org.testng.annotations.Test;
+import pages.EditProfilePage;
+import pages.HomePage;
 import pages.LoginPage;
 
 import static utils.UserData.USER_NAME;
@@ -28,8 +30,8 @@ public class LoginTest extends TestInit {
                 .inputUserPassword(USER_PASSWORD)
                 .clickLoginButton();
 
-        assertTrue(getUrl("sanek2070452"));
-        assertTrue(loginElements.getUserNameTitle("sanek2070452"));
+        assertTrue(getUrl("Oleksandr"));
+        assertTrue(loginElements.getUserNameTitle("Oleksandr"));
 
     }
 
@@ -49,6 +51,59 @@ public class LoginTest extends TestInit {
                 .clickLoginButton();
 
         assertTrue(loginPage.isErrorMessageThereWasAProblemVisible());
+
+    }
+
+    @Test
+    @Description("Positive: user edit his account ")
+    public void userEditHisProfile() {
+
+        HomePage homePage = new HomePage();
+        HeaderComponent headerComponent = new HeaderComponent();
+        LoginPage loginPage = new LoginPage();
+        EditProfilePage editProfilePage = new EditProfilePage();
+        homePage
+                .clickAcceptAllCookies();
+
+        loginPage
+                .themoviedbLogin();
+
+        headerComponent
+                .clickAccountProfile()
+                .clickEditProfileButton();
+
+        editProfilePage
+                .selectMaleGender()
+                .inputName("Oleksandr")
+                .clickSaveButton();
+
+        assertTrue(editProfilePage.getNameAccountHeader().getText().contains("Oleksandr"));
+
+    }
+
+    @Test
+    @Description("Positive: user reset his password")
+    public void userResetPassword() {
+
+        HomePage homePage = new HomePage();
+        HeaderComponent headerComponent = new HeaderComponent();
+        LoginPage loginPage = new LoginPage();
+        EditProfilePage editProfilePage = new EditProfilePage();
+        homePage
+                .clickAcceptAllCookies();
+
+        loginPage
+                .themoviedbLogin();
+
+        headerComponent
+                .clickAccountProfile()
+                .clickEditProfileButton();
+
+        editProfilePage
+                .clickResetPasswordButton()
+                .clickYesButton();
+
+        assertTrue(homePage.getLoggedOutHeader().getText().contains("Logged Out!"));
 
     }
 }
