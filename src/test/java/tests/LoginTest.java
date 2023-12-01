@@ -30,7 +30,7 @@ public class LoginTest extends TestInit {
                 .inputUserPassword(USER_PASSWORD)
                 .clickLoginButton();
 
-        assertTrue(getUrl("Oleksandr"));
+        assertTrue(getUrl("sanek2070452"));
         assertTrue(loginElements.getUserNameTitle("Oleksandr"));
 
     }
