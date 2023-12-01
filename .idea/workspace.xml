@@ -7,15 +7,11 @@
     <list default="true" id="c724a48f-6455-455c-b959-1d42e7af952f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/CreateListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CreateListElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/ListsElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/ListsElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/LoginElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/MovieElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/MovieElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fragments/HeaderComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MoviePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MoviePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/HomeElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/WatchlistElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/WatchlistElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Login" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -45,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Home",
+    "git-widget-placeholder": "APIModuless",
     "last_opened_file_path": "C:/Users/Olexsandr/IdeaProjects/email-automation-project",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -60,7 +61,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomeTest.userAddMovieToWishlist">
+  <component name="RunManager" selected="TestNG.C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml">
     <configuration name="C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Themoviedb" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testAllSuite.xml" />
@@ -121,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomeTest.userAddMovieToWishlist" />
         <item itemvalue="TestNG.C:/Users/Olexsandr/IdeaProjects/Themoviedb/src/test/resources/testAllSuite.xml" />
+        <item itemvalue="TestNG.HomeTest.userAddMovieToWishlist" />
         <item itemvalue="TestNG.HomeTest.userDeleteList" />
         <item itemvalue="TestNG.HomeTest.userAddPhotoMovieList" />
         <item itemvalue="TestNG.LoginTest.userValidLogin" />

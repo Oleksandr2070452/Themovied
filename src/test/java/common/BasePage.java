@@ -33,5 +33,10 @@ public class BasePage {
         SelenideElement element = $(By.xpath(selector));
         actions().moveToElement(element).perform();
     }
+
+    private SelenideElement findElementByTextFormat(String locator) {
+        String dynamicXPath = String.format(locator);
+        return $(dynamicXPath);
+    }
 }
 

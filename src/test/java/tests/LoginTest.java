@@ -29,7 +29,7 @@ public class LoginTest extends TestInit {
                 .clickLoginButton();
 
         assertTrue(getUrl("sanek2070452"));
-        assertTrue(loginElements.getUserNameTitle("sanek2070452"));
+        assertTrue(loginElements.getUserNameTitle("Oleksandr"));
 
     }
 
