@@ -14,7 +14,7 @@ public class Randomizers {
 
     public static void randomEmail(SelenideElement element) {
         String randomEmail = faker.internet().emailAddress();
-        element.sendKeys(randomEmail);
+        element.setValue(randomEmail);
     }
 
     public static void randomPassword(SelenideElement element) {
