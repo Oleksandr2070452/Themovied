@@ -11,7 +11,7 @@ public class HomeTest extends TestInit {
 
     private final static String LIST_NAME = "Test";
     private final static String LIST_DESCRIPTION = "Only for testing";
-    private final static String MOVIE_NAME = "Family Switch";
+    private final static String MOVIE_NAME = "Killers of the Flower Moon";
     private final static String MOVIE_DESCRIPTION = "Test movie description";
     private final static String WARNING_LOGIN_MESSAGE = "Login to create and edit custom lists";
 

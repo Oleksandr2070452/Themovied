@@ -9,7 +9,7 @@ public class EditProfileElements extends BasePage {
     private final static String GENDER_MALE = "//li[text()='Male']";
     private final static String NAME_INPUT = "//input[@id='name']";
     private final static String SAVE_BUTTON = "//input[@value='Save']";
-    private final static String NAME_ACCOUNT_HEADER = "//div[@class='content_wrapper']//a[text()='Oleksandr']";
+    private final static String NAME_ACCOUNT_HEADER = "//div[@class='content_wrapper flex']//a[text()='Oleksandr']";
     private final static String RESET_PASSWORD_BUTTON = "//button[@class='k-button purple reset_password valid']";
     private final static String YES_BUTTON = "//button[text()='Yes']";
 
