@@ -55,7 +55,7 @@ public class LoginTest extends TestInit {
     }
 
     @Test
-    @Description("Positive: user edit his account ")
+    @Description("Positive: user edit his account")
     public void userEditHisProfile() {
 
         HomePage homePage = new HomePage();
@@ -76,6 +76,8 @@ public class LoginTest extends TestInit {
                 .selectMaleGender()
                 .inputName("Oleksandr")
                 .clickSaveButton();
+
+        refreshPage();
 
         assertTrue(editProfilePage.getNameAccountHeader().getText().contains("Oleksandr"));
 
